@@ -1,37 +1,62 @@
 <html>
     <head>
         <title>Список дел</title>
-    </head>
-    <body>
+        <link rel="icon" type="image/png" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <body class="container">
         <header>
             <h1>Список дел</h1>
         </header>
         <main>
-            <form>
-                <input placeholder="Новый элемент списка">
-                <button type="submit">Создать</button>
-                <button type="reset">Очистить всё</button>
-                <ol>
-                    <li>
-                        <label>
-                            <input type="checkbox"> Почесать кошку
-                            <sub>от 04.05.2022</sub>
-                            <button>&#10060;</button>
-                        </label>
+            <form class="form">
+                <div class="e">
+                    <input type="text" class="input" placeholder="Новый элемент списка">
+                    <button class="button-create" type="submit">Создать</button>
+                    <button class="button-reset" type="reset">Очистить всё</button>
+                </div>
+                <ol class="list">
+                    <li class="list-element">
+                        <div class="container-list-element">
+                            <input class="input-checkbox" type="checkbox" id="task1">
+                            <div class="container-task">
+                                <label class="task" for="task1">Почесать кошку</label>
+                                <label class="date">от 12.08.2025</label>
+                            </div>
+                        </div>
+                        <button class="button-cancel">&#10006;</button>
                     </li>
-                    <li>
-                        <label>
-                            <input type="checkbox"> Полить картошку
-                            <sub>от 24.08.2023</sub>
-                            <button>&#10060;</button>
-                        </label>
+                    <li class="list-element">
+                        <div class="container-list-element">
+                            <input class="input-checkbox" type="checkbox" id="task2">
+                            <div class="container-task">
+                                <label class="task" for="task2">Полить картошку</label>
+                                <label class="date">от 23.07.2025</label>
+                            </div>
+                        </div>
+                        <button class="button-cancel">&#10006;</button>
                     </li>
-                    <li>
-                        <label>
-                            <input type="checkbox"> Сложить в лукошко
-                            <sub>от 14.05.2022</sub>
-                            <button>&#10060;</button>
-                        </label>
+                    <li class="list-element">
+                        <div class="container-list-element">
+                            <input class="input-checkbox" type="checkbox" id="task3">
+                            <div class="container-task">
+                                <label class="task" for="task3">Сложить в лукошко</label>
+                                <label class="date">от 11.07.2025</label>
+                            </div>
+                        </div>
+                        <button class="button-cancel">&#10006;</button>
+                    </li>
+                    <li class="list-element">
+                        <div class="container-list-element">
+                            <input class="input-checkbox" type="checkbox" id="task4">
+                            <div class="container-task">
+                                <label class="task" for="task4">Сложить в   sjdfhskljf skljdfskjdfls kjflksdjf lskjdf lskjd flskjfd lkлукошко</label>
+                                <label class="date">от 23.05.2025</label>
+                            </div>
+                        </div>
+                        <button class="button-cancel">&#10006;</button>
                     </li>
                 </ol>
             </form>
