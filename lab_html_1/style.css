@@ -253,14 +253,14 @@ hr {
     transition: .2s linear;
     &:hover {
         background-color: white;
-        box-shadow: 0 0 0 2px rgb(91, 91, 91), 0 0 0 4px white;
+        box-shadow: 0 4px 0px 0 rgb(137, 137, 137);
         transform: translateY(-3px);
     }
     &:active {
         transform: scale(0.95);
         transition: background-color 0s;
         background-color: rgb(203, 203, 203);
-        box-shadow: 0 0 0 2px rgb(91, 91, 91), 0 0 0 4px rgb(203, 203, 203);
+        box-shadow: 0 2px 0px 0 rgb(81, 81, 81);
     }
 }
 
@@ -277,14 +277,13 @@ hr {
     &:hover {
         transform: translateY(-3px);
         background-color: rgb(255, 63, 63);
-        box-shadow: 0 0 0 2px rgb(68, 17, 17), 0 0 0 4px rgb(255, 63, 63);
+        box-shadow: 0 4px 0px 0 rgb(117, 0, 0);
     }
     &:active {
-        transform: scale(0.9);
-
+        transform: scale(0.95);
         transition: background-color 0s;
         background-color: rgb(117, 0, 0);
-        box-shadow: 0 0 0 2px rgb(68, 17, 17), 0 0 0 4px rgb(117, 0, 0);
+        box-shadow: 0 2px 0px 0 rgb(83, 0, 0);
     }
 }
 
