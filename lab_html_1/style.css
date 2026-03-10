@@ -11,7 +11,7 @@
     background-attachment: fixed;
     color: white;
     min-height: 100vh;
-    
+    margin: 0px;
 }
 
 @media (max-width: 900px) {
@@ -218,27 +218,51 @@ hr {
         background-color: darkgrey;
         .button-cancel { 
             background-color: darkgrey;
+            color: rgb(101, 101, 101);
         }
         .input-checkbox:checked { 
-            accent-color: darkgrey;
+            accent-color: rgb(101, 101, 101);
         }
     } 
+    &:has(.input-checkbox:checked) {
+        background-color: rgb(88, 88, 88);
+        .button-cancel {
+            background-color: rgb(88, 88, 88);
+            color: white;
+        }
+        .container-task {
+            color: white;
+        }
+        &:hover {
+            background-color: rgb(68, 68, 68);
+            .button-cancel {
+                background-color: rgb(68, 68, 68);
+            }
+            .input-checkbox:checked { 
+                accent-color: rgb(68, 68, 68);
+            }
+        }
+    }
 }
+
 
 /* чекбоксы */
 .input-checkbox {
     accent-color: darkgrey;
     transition: .2s linear;
     &:checked  {
-        accent-color: rgb(219, 219, 219);
+        accent-color: rgb(88, 88, 88);
         + .container-task {
             .task {
                 text-decoration: line-through;
             }
         }
-    }
-    &:hover {
-        filter: brightness(0.86)
+        .container-list-element {
+            background-color: rgb(48, 48, 48);
+        }
+        .button-cancel {
+            color: white;
+        }
     }
 }
 
@@ -292,7 +316,4 @@ hr {
     border: none;
     transition:.2s linear;
     background-color: rgb(219, 219, 219);
-    &:hover {
-        color: white;
-    }
 }
