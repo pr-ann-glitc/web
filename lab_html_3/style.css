@@ -4,6 +4,32 @@
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* стиль для кнопок */
+.button-def {
+    background-color: rgb(255, 103, 86);
+    color: white;
+    border: none;
+    height: 35px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    margin: 10px 0px 0px 0px;
+    transition: 0.2s;
+    &:hover {
+        transform: translateY(-2px);
+        cursor: pointer;
+        background-color: rgb(251, 79, 60);
+        box-shadow: 0px 2px 4px rgb(169, 169, 169);
+    }
+}
+
+
+/* шапка страницы */
 a {
     color: rgb(67, 67, 67);
     text-decoration: none;
@@ -14,18 +40,12 @@ a {
     }
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 20px 10px 20px;
-    box-shadow: inset 0px -4px 4px rgba(34, 60, 80, 0.5);
+    padding: 10px 30px 10px 30px;
+    /* box-shadow: inset 0px -4px 4px rgba(34, 60, 80, 0.5); */
     height: 40px;
 }
 
@@ -34,13 +54,13 @@ a {
 }
 
 #travel-span {
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     font-weight: bolder;
 }
 
 #world-span {
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(255, 103, 86);
     font-weight: bolder;
 }
@@ -54,8 +74,10 @@ a {
     width: 50%;
 }
 
+
+/* первый блок с фоном-картинкой */
 #first {
-    background: url("first_img.jpg") no-repeat center; 
+    background: url("first-img.jpg") no-repeat center; 
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -80,12 +102,12 @@ a {
 
 }
 
-.button-style {
+.button-spec {
     background-color: rgb(255, 103, 86);
     color: white;
     border: none;
     height: 35px;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 20px 5px 20px;
     border-radius: 20px;
     margin: 10px;
     transition: 0.2s;
@@ -96,13 +118,7 @@ a {
     }
 }
 
-.header-block {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(41, 41, 41);
-    margin: 0px 0px 30px 0px;
-}
-
+/* блок о нашем агенстсве */
 #description {
     display: flex;
     flex-direction: column;
@@ -112,9 +128,23 @@ a {
     padding: 50px 150px 50px 150px;
 }
 
+.header-block {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+    margin: 0px 0px 30px 0px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -125,12 +155,104 @@ a {
 }
 
 .span-text {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
-    color: rgb(55, 55, 55);
+    color: rgb(65, 65, 65);
 }
+
 .text-description {
     color: rgb(74, 74, 74);
     width: 45%;
-    padding: 10px;
+    padding: 10px 30px 10px 10px;  
+}
+
+/* блок наши лучшие предложения */
+#best {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(240, 240, 240);
+    height: fit-content;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: max-content;
+    .img-c {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        
+    }
+}
+.img-c {
+    height: 300px;
+    width: 500px;
+}
+
+.carousel-element {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.41);
+    color: white;
+    padding: 20px 15px 15px 15px;
+    border-radius: 0 0 10px 10px;
+    text-align: left;
+    h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 0.85rem;
+        opacity: 0.9;
+    }
+}
+
+.images {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding: 0;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    &::-webkit-scrollbar {
+        display: none;  /* Chrome, Safari, Opera */
+    }
+}
+
+.sliders {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+    & a {
+        width: 8px;
+        height: 8px;
+        margin: 5px;
+        border-radius: 50%;
+        border: 2px solid rgb(138, 137, 137);
+        background-color: rgb(138, 137, 137);
+        opacity: 0.75;
+        &:hover {
+            background-color: black;
+        }
+    }
 }
