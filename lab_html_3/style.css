@@ -1,0 +1,136 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: rgb(67, 67, 67);
+    text-decoration: none;
+    &:hover {
+        color: black;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    box-shadow: inset 0px -4px 4px rgba(34, 60, 80, 0.5);
+    height: 40px;
+}
+
+.name-travel {
+    width: fit-content;
+}
+
+#travel-span {
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+}
+
+#world-span {
+    font-size: 30px;
+    color: rgb(255, 103, 86);
+    font-weight: bolder;
+}
+
+.links {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 50%;
+}
+
+#first {
+    background: url("first_img.jpg") no-repeat center; 
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#text-first {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    margin: 10px;
+}
+
+#first-text {
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+
+}
+
+.button-style {
+    background-color: rgb(255, 103, 86);
+    color: white;
+    border: none;
+    height: 35px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.2s;
+    &:hover {
+        transform: translateY(-2px);
+        cursor: pointer;
+        background-color: rgb(251, 79, 60);
+    }
+}
+
+.header-block {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+    margin: 0px 0px 30px 0px;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px 150px 50px 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-description {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.span-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(55, 55, 55);
+}
+.text-description {
+    color: rgb(74, 74, 74);
+    width: 45%;
+    padding: 10px;
+}
