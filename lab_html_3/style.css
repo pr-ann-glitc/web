@@ -35,7 +35,6 @@ a {
     text-decoration: none;
     &:hover {
         color: black;
-        text-decoration: underline;
         cursor: pointer;
     }
 }
@@ -132,7 +131,7 @@ a {
     font-size: 35px;
     font-weight: bold;
     color: rgb(41, 41, 41);
-    margin: 0px 0px 30px 0px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -146,6 +145,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.02);
+    }
 }
 
 .img-description {
@@ -155,9 +158,10 @@ a {
 }
 
 .span-text {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     color: rgb(65, 65, 65);
+    padding-bottom: 10px;
 }
 
 .text-description {
@@ -173,7 +177,7 @@ a {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 150px 50px 150px;
     background-color: rgb(240, 240, 240);
     height: fit-content;
 }
@@ -188,9 +192,9 @@ a {
     .img-c {
         flex: 1 0 100%;
         scroll-snap-align: start;
-        
     }
 }
+
 .img-c {
     height: 300px;
     width: 500px;
@@ -255,4 +259,53 @@ a {
             background-color: black;
         }
     }
+}
+
+
+/* блок популярные направления */
+#routes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px 150px 50px 150px;
+
+}
+
+.container-image {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.route-card {
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgb(213, 213, 213);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.img-route-card {
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.text-route-card {
+    /* width: 100%; */
+    margin: 20px;
 }
