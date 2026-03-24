@@ -43,8 +43,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px 30px 10px 30px;
-    /* box-shadow: inset 0px -4px 4px rgba(34, 60, 80, 0.5); */
     height: 40px;
 }
 
@@ -92,6 +92,7 @@ a {
     color: rgb(255, 255, 255);
     font-weight: bolder;
     margin: 10px;
+    align-items: center;
 }
 
 #first-text {
@@ -125,6 +126,8 @@ a {
     align-content: center;
     align-items: center;
     padding: 50px 150px 50px 150px;
+    flex-wrap: wrap;
+
 }
 
 .header-block {
@@ -139,6 +142,8 @@ a {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
+
 }
 
 .img {
@@ -160,7 +165,7 @@ a {
 .span-text {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(65, 65, 65);
+    color: rgb(71, 71, 71);
     padding-bottom: 10px;
 }
 
@@ -180,6 +185,7 @@ a {
     padding: 50px 150px 50px 150px;
     background-color: rgb(240, 240, 240);
     height: fit-content;
+    flex-wrap: wrap;
 }
 
 .carousel {
@@ -270,15 +276,18 @@ a {
     align-content: center;
     align-items: center;
     padding: 50px 150px 50px 150px;
+    flex-wrap: wrap;
 
 }
 
-.container-image {
+.container-div {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+    flex-wrap: wrap;
+
 }
 
 .route-card {
@@ -289,7 +298,9 @@ a {
     display: flex;
     flex-direction: column;
     transition: 0.3s;
+    margin: 20px;
 }
+
 .img-route-card {
     width: 350px;
     height: 200px;
@@ -306,6 +317,112 @@ a {
 }
 
 .text-route-card {
-    /* width: 100%; */
+    height: 28%;
     margin: 20px;
+}
+
+/*  */
+#tours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 150px 50px 150px;
+}
+
+.tour-card {
+    height: 420px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgb(213, 213, 213);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    margin: 20px;
+}
+
+.cont-price-and-button {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
+}
+
+.tour-card-price {
+    padding-top: 10px; 
+    color: rgb(251, 79, 60); 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*  */
+#feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 150px 50px 150px;
+}
+
+.feedback-card {
+    height: 300px;
+    width: 310px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgb(213, 213, 213);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(251, 251, 251);
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+}
+
+.user-avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    img {
+        object-fit: cover;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+.user-data {
+    padding-left: 20px; 
+    align-content: center;
+}
+.username {
+    font-weight: bold;
+}
+.user-tour {
+    font-size: 14px;
+    color: gray;
+}
+
+.feedback-text {
+    padding-top: 20px;
+    font-style: italic;
+    color: gray;
+}
+
+/*  */
+.moments {
+    
 }
