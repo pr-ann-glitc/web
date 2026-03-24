@@ -287,7 +287,6 @@ a {
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
-
 }
 
 .route-card {
@@ -423,6 +422,33 @@ a {
 }
 
 /*  */
-.moments {
+#moments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 150px 50px 150px;
+}
+
+.moment-img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
