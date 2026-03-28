@@ -379,9 +379,6 @@ a {
     padding: 20px;
     background-color: rgb(251, 251, 251);
     transition: 0.5s;
-    &:hover {
-        transform: scale(1.05);
-    }
 }
 
 .user {
@@ -441,6 +438,7 @@ a {
     transition: 0.5s;
     &:hover {
         transform: scale(1.05);
+        cursor: pointer;
     }
 }
 
@@ -450,5 +448,42 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+}
+
+/* блок часто задаваемые вопросы */
+#questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px 150px 50px 150px;
+}
+
+.container-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 2px 6px rgb(213, 213, 213);
+    border-radius: 10px;
+    width: 60%;
+    height: 50px;
+    margin-top: 15px;
+    p {
+        padding-bottom: 4px;
+    }
+    button {
+        height: 21px;
+        width: 21px;
+        border: none;
+        transform: rotate(45deg);
+        background-color: rgb(247, 247, 247);
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
 }
