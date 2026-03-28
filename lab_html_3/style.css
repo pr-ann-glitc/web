@@ -487,3 +487,14 @@ a {
         
     }
 }
+
+
+#foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(156, 155, 155);
+    background-color: rgb(65, 65, 65);
+    padding: 20px;
+}
