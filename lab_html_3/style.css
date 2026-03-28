@@ -76,7 +76,7 @@ a {
 
 /* первый блок с фоном-картинкой */
 #first {
-    background: url("first-img.jpg") no-repeat center; 
+    background: url("other-images/first-img.jpg") no-repeat center; 
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -150,9 +150,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 0.3s;
+    transition: 0.5s;
     &:hover {
-        transform: scale(1.02);
+        transform: scale(1.05);
     }
 }
 
