@@ -644,34 +644,17 @@ a {
 }
 
 .maps {
-    position: relative;
     width: 100%;
-    height: 415px;
+    height: auto;
     margin-top: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    svg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
-
-.map-el {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.img-map {
-    height: 415px;
-    width: 600px;
-    border-radius: 10px;
-}
-
-.contacts-wrapper:has(#r1:checked) .maps .europe,
-.contacts-wrapper:has(#r2:checked) .maps .asia,
-.contacts-wrapper:has(#r3:checked) .maps .america,
-.contacts-wrapper:has(#r4:checked) .maps .africa {
-    display: block;
-}
-
 
 /* футер */
 #foo {
