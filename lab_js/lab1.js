@@ -1,4 +1,6 @@
 //1
+// Объявите две переменные: admin и name. Запишите строку "Джон" в переменную name.
+// Скопируйте значение из переменной name в admin. Выведите на экран значение admin, используя функцию alert (должна показать «Джон»).
 let admin, firstName;
 firstName = "John";
 admin = firstName;
@@ -11,6 +13,7 @@ let b = prompt("Второе число?", 2);
 alert(Number(a) + Number(b)); 
 
 //3
+//При помощи цикла for выведите чётные числа от 2 до 10.
 for (let i = 1; i < 11; i++) {
     if (i%2 == 0)
         console.log(i);
@@ -24,6 +27,8 @@ while (i < 3) {
 }
 
 //5
+// Напишите цикл, который предлагает prompt ввести число, большее 100. Если посетитель ввёл другое число – попросить ввести ещё раз, и так далее.
+// Цикл должен спрашивать число пока либо посетитель не введёт число, большее 100, либо не нажмёт кнопку Отмена (ESC).
 let userNumber = prompt("введите число больше 100!: ");
 while (userNumber < 100 && userNumber !== null) {
     userNumber = prompt("введите число больше 100!: ")
@@ -31,6 +36,7 @@ while (userNumber < 100 && userNumber !== null) {
 alert("userNumber = " + userNumber)
 
 //6
+// Напишите код, который выводит все простые числа из интервала от 2 до n
 function isPrime(num) {
   if (num <= 1) return false;
   if (num <= 3) return true;
