@@ -4,7 +4,7 @@
 let admin, firstName;
 firstName = "John";
 admin = firstName;
-console.log(admin)
+alert(admin)
 
 //2
 let a = prompt("Первое число?", 1);
