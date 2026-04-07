@@ -42,7 +42,7 @@ function isPrime(num) {
 }
 
 let n = prompt("number: ");
-for (let i = 1; i < n; i++) {
+for (let i = 2; i < n; i++) {
     if (isPrime(i)) 
         console.log(i)
 }
