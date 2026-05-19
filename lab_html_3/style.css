@@ -18,7 +18,7 @@
     height: 35px;
     padding: 5px 20px 5px 20px;
     border-radius: 20px;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 10px 0px 0px;
     transition: 0.2s;
     &:hover {
         transform: translateY(-2px);
@@ -643,17 +643,12 @@ a {
     }
 }
 
-.maps {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    svg {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 /* футер */
