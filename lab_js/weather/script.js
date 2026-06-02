@@ -65,7 +65,7 @@ document.getElementById('next-button').addEventListener('click', function() {
 
 function getWeatherByCode(code) {
     const weatherMap = {
-        0:  { text: 'Ясно', icon: '☀️', image: './images/free-icon-sunny-6393305.png' },
+        0:  { text: 'Ясно', icon: '☀️', image: './images/free-icon-sunny-6393507.png' },
         1:  { text: 'Преимущественно ясно', icon: '🌤️', image: './images/free-icon-cloudy-day-6393344.png' },
         2:  { text: 'Переменная облачность', icon: '⛅', image: './images/free-icon-cloudy-day-6393344.png' },
         3:  { text: 'Пасмурно', icon: '☁️', image: './images/free-icon-cloud-6393324.png' },
