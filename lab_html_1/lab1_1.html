@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Список дел</title>
-        <link rel="icon" type="image/png" href="icon.png">
+        <link rel="icon" type="image/png" href="./images/icon.png">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,61 +9,47 @@
     </head>
     <body class="container">
         <header>
-                <img class="imagef" src="koshka-1.png">
+                <img class="imagef" src="./images/koshka-1.png">
                 <h1>Список дел</h1>
         </header>
-            <form class="form">
+        <div class="form-c">
+            <form class="form" id="myForm">
                 <div class="div-create">
-                    <input type="text" class="input" placeholder="Новый элемент списка">
-                    <button class="button-create" type="submit">Создать</button>
-                    <button class="button-reset" type="reset">Очистить всё</button>
+                    <input type="text" id="title-task" class="input" placeholder="Новый элемент списка">
+                    <button class="button-create" id="button-create" type="submit">Создать</button>
+                    <button class="button-reset" id="button-reset" type="reset">Очистить</button>
                 </div>
-                <ol class="list">
-                    <li class="list-element">
-                        <div class="container-list-element">
-                            <input class="input-checkbox" type="checkbox" id="task1">
-                            <div class="container-task">
-                                <label class="task" for="task1">Почесать кошку</label>
-                                <label class="date">от 12.08.2025</label>
-                            </div>
-                        </div>
-                        <button class="button-cancel">&#10006;</button>
-                    </li>
-                    <li class="list-element">
-                        <div class="container-list-element">
-                            <input class="input-checkbox" type="checkbox" id="task2">
-                            <div class="container-task">
-                                <label class="task" for="task2">Полить картошку</label>
-                                <label class="date">от 23.07.2025</label>
-                            </div>
-                        </div>
-                        <button class="button-cancel">&#10006;</button>
-                    </li>
-                    <li class="list-element">
-                        <div class="container-list-element">
-                            <input class="input-checkbox" type="checkbox" id="task3">
-                            <div class="container-task">
-                                <label class="task" for="task3">Сложить в лукошко</label>
-                                <label class="date">от 11.07.2025</label>
-                            </div>
-                        </div>
-                        <button class="button-cancel">&#10006;</button>
-                    </li>
-                    <li class="list-element">
-                        <div class="container-list-element">
-                            <input class="input-checkbox" type="checkbox" id="task4">
-                            <div class="container-task">
-                                <label class="task" for="task4">Сложить в   sjdfhskljf skljdfskjdfls kjflksdjf lskjdf lskjd flskjfd lkлукошко</label>
-                                <label class="date">от 23.05.2025</label>
-                            </div>
-                        </div>
-                        <button class="button-cancel">&#10006;</button>
-                    </li>
-                </ol>
             </form>
+            <ol id="list" class="list"></ol>
+            <div class="row">
+                <div class="refs">
+                    <a id="done" href="#list">СДЕЛАНО (0)</a>
+                    <a id="ndone" href="#list">НЕ СДЕЛАНО (0)</a>
+                    <a id="all" href="#list">ВСЕ (0)</a>
+                    <a id="sort" href="#sort-div">⬆⬇</a>
+                </div>
+                <div id="sort-div" class="refs">
+                    <span id="from-new">От новых к старым</span>
+                    <br>
+                    <span id="from-old">От старых к новым</span>
+                    <br>
+                    <span id="start">А-Я</span>
+                    <br>
+                    <span id="finish">Я-А</span>
+                </div>
+            </div>
+            <div class="row">
+                <button class="button-reset-mini" id="reset-filters">Очистить фильтры</button>
+                <button class="button-reset-mini" id="delete-tasks">Удалить все задачи</button>
+            </div>
+            
+        </div>
+            
         <footer>
             <hr/>
             <p>Copyright &#169;</p>
         </footer>
+        <script src="script.js"></script>
+
     </body>
 </html>
